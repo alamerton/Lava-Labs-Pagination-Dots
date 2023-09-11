@@ -7,6 +7,7 @@
   <li><a href="#scrollPage4"></a></li>
   <li><a href="#scrollPage5"></a></li>
   <li><a href="#scrollPage6"></a></li>
+  <!-- Add or remove as necessary, should reflect the number of sections on the page -->
 </ul>
 <script>
   function pagination() {
@@ -57,6 +58,7 @@
       ) {
         $body.removeClass("scrollPage-6").addClass("scrollPage-" + page);
       }
+      // Likewise, these IF statements should reflect the number of sections on the page and correspond to the above list items
     });
   }
   pagination();
