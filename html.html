@@ -15,7 +15,6 @@
     var pages = Object.keys($(".scrollPage"))
       .filter((section) => Number(section) + 1)
       .map((section) => Number(section) + 1);
-
     pages.map((page) => {
       if (offset > windowHeight * (page - 2 + padding)) {
         $body.removeClass("scrollPage").addClass("scrollPage-" + page);
@@ -58,18 +57,6 @@
       }
     });
   }
-
   pagination();
-
   $(document).on("scroll", pagination);
-
-  // $(document).on("click", 'a[href^="#"]', function (e) {
-  //   e.preventDefault();
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: $($.attr(this, "href")).offset().top,
-  //     },
-  //     500
-  //   );
-  // });
 </script>
