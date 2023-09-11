@@ -1,0 +1,41 @@
+/* ------------------------------- */
+/* Vertical Pagination Dots Styles */
+/* ------------------------------- */
+
+#pagination {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  list-style: none;
+}
+#pagination li {
+  position: relative;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  transition: all 0.2s ease;
+}
+#pagination li:hover {
+  transform: scale(1.5);
+}
+#pagination a {
+  position: absolute;
+  text-decoration: none;
+  left: 0;
+  top: 0;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+body.scrollPage-1 #pagination li:nth-of-type(1),
+body.scrollPage-2 #pagination li:nth-of-type(2),
+body.scrollPage-3 #pagination li:nth-of-type(3),
+body.scrollPage-4 #pagination li:nth-of-type(4),
+body.scrollPage-5 #pagination li:nth-of-type(5),
+body.scrollPage-6 #pagination li:nth-of-type(6) {
+  transform: scale(2);
+}
