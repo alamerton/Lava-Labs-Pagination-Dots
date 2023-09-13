@@ -37,7 +37,7 @@ body.scrollPage-3 #pagination li:nth-of-type(3),
 body.scrollPage-4 #pagination li:nth-of-type(4),
 body.scrollPage-5 #pagination li:nth-of-type(5),
 body.scrollPage-6 #pagination li:nth-of-type(6),
-body.scrollPage-6 #pagination li:nth-of-type(7),
-body.scrollPage-6 #pagination li:nth-of-type(8) {
+body.scrollPage-7 #pagination li:nth-of-type(7),
+body.scrollPage-8 #pagination li:nth-of-type(8) {
   transform: scale(2);
 }
