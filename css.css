@@ -19,12 +19,38 @@
   height: 8px;
   transition: all 0.2s ease !important;
 }
+#pagination #WWBI1 {
+  background-color: #d9d9d9;
+}
 
 #pagination #WWBI2 {
   border-radius: 4px;
   width: 16px;
-  right: 8px;
+  right: 4px;
   background-color: #ed1a39;
+}
+
+#pagination #WWBI3,
+#pagination #WWBI4 {
+  background-color: #ed1a39;
+}
+
+#pagination #WWBI5 {
+  border-radius: 4px;
+  width: 16px;
+  right: 4px;
+  background-color: #febd10;
+}
+
+#pagination #WWBI6 {
+  background-color: #febd10;
+}
+
+#pagination #WWBI7 {
+  border-radius: 4px;
+  width: 16px;
+  right: 4px;
+  background-color: #febd10;
 }
 
 #pagination li:hover {
@@ -44,14 +70,19 @@
 body.scrollPage-1 #pagination li:nth-of-type(1),
 body.scrollPage-3 #pagination li:nth-of-type(3),
 body.scrollPage-4 #pagination li:nth-of-type(4),
-body.scrollPage-5 #pagination li:nth-of-type(5),
 body.scrollPage-6 #pagination li:nth-of-type(6),
-body.scrollPage-7 #pagination li:nth-of-type(7),
 body.scrollPage-8 #pagination li:nth-of-type(8) {
   transform: scale(2);
 }
 
 body.scrollPage-2 #pagination li:nth-of-type(2) {
-  transform: scale(2);
-  right: 16px !important;
+  right: 8px !important;
+}
+
+body.scrollPage-5 #pagination li:nth-of-type(5) {
+  right: 8px !important;
+}
+
+body.scrollPage-7 #pagination li:nth-of-type(7) {
+  right: 8px !important;
 }
