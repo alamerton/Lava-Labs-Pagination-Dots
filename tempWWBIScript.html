@@ -1,0 +1,95 @@
+<!-- Pagination Code -->
+<!-- https://github.com/alamerton/Lava-Labs-Pagination-Dots -->
+<ul id="pagination">
+  <li>
+    <a href="#scrollPage1"></a>
+    <p class="pageName">page</p>
+  </li>
+  <li>
+    <a href="#scrollPage2"></a>
+    <p class="pageName">page</p>
+  </li>
+  <li>
+    <a href="#scrollPage3"></a>
+    <p class="pageName">page</p>
+  </li>
+  <li>
+    <a href="#scrollPage4"></a>
+    <p class="pageName">page</p>
+  </li>
+  <li>
+    <a href="#scrollPage5"></a>
+    <p class="pageName">page</p>
+  </li>
+  <li>
+    <a href="#scrollPage6"></a>
+    <p class="pageName">page</p>
+  </li>
+  <!-- Add or remove as necessary, should reflect the number of sections on the page -->
+</ul>
+<script>
+  function pagination() {
+    var offset = $(document).scrollTop();
+    var windowHeight = $(window).height();
+    var $body = $("body");
+    var padding = 0.75;
+    var pages = Object.keys($(".scrollPage"))
+      .filter((section) => Number(section) + 1)
+      .map((section) => Number(section) + 1);
+    pages.map((page) => {
+      if (offset > windowHeight * (page - 2 + padding)) {
+        $body.removeClass("scrollPage").addClass("scrollPage-" + page);
+      }
+      if (
+        $body.hasClass("scrollPage-1") &&
+        offset > windowHeight * (page - 2 + padding)
+      ) {
+        $body.removeClass("scrollPage-1").addClass("scrollPage-" + page);
+      }
+      if (
+        $body.hasClass("scrollPage-2") &&
+        offset > windowHeight * (page - 2 + padding)
+      ) {
+        $body.removeClass("scrollPage-2").addClass("scrollPage-" + page);
+      }
+      if (
+        $body.hasClass("scrollPage-3") &&
+        offset > windowHeight * (page - 2 + padding)
+      ) {
+        $body.removeClass("scrollPage-3").addClass("scrollPage-" + page);
+      }
+      if (
+        $body.hasClass("scrollPage-4") &&
+        offset > windowHeight * (page - 2 + padding)
+      ) {
+        $body.removeClass("scrollPage-4").addClass("scrollPage-" + page);
+      }
+      if (
+        $body.hasClass("scrollPage-5") &&
+        offset > windowHeight * (page - 2 + padding)
+      ) {
+        $body.removeClass("scrollPage-5").addClass("scrollPage-" + page);
+      }
+      if (
+        $body.hasClass("scrollPage-6") &&
+        offset > windowHeight * (page - 2 + padding)
+      ) {
+        $body.removeClass("scrollPage-6").addClass("scrollPage-" + page);
+      }
+      // Likewise, these IF statements should reflect the number of sections on the page and correspond to the above list items
+    });
+  }
+  pagination();
+  $(document).on("scroll", pagination);
+</script>
+
+<!-- 
+  
+
+.pageName {
+  position: fixed;
+  right: 50px;
+  margin: auto;
+}
+
+ -->

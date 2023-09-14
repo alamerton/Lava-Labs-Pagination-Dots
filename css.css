@@ -9,18 +9,21 @@
   right: 30px;
   list-style: none;
 }
+
 #pagination li {
   position: relative;
   margin: 20px 0;
-  background: #fff;
+  background: #7bd3f7;
   border-radius: 100%;
   width: 8px;
   height: 8px;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease !important;
 }
+
 #pagination li:hover {
   transform: scale(1.5);
 }
+
 #pagination a {
   position: absolute;
   text-decoration: none;
