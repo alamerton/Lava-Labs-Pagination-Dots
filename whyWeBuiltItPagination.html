@@ -1,16 +1,31 @@
 <!-- Pagination Code -->
 <!-- https://github.com/alamerton/Lava-Labs-Pagination-Dots -->
 <ul id="pagination">
-  <li class="section-index" id="WWBI1"><a href="#scrollPage1"></a></li>
-  <li class="section-index" id="WWBI2"><a href="#scrollPage2"></a></li>
-  <li class="section-index" id="WWBI3"><a href="#scrollPage3"></a></li>
-  <li class="section-index" id="WWBI4"><a href="#scrollPage4"></a></li>
-  <li class="section-index" id="WWBI5"><a href="#scrollPage5"></a></li>
-  <li class="section-index" id="WWBI6"><a href="#scrollPage6"></a></li>
-  <li class="section-index" id="WWBI7"><a href="#scrollPage7"></a></li>
-  <li class="section-index" id="WWBI8"><a href="#scrollPage8"></a></li>
-  <!-- Add or remove as necessary, should reflect the number of sections on the page -->
-  <li class="section-index" id="Footer"><a href="#scrollPageFooter"></a></li>
+  <li class="section-index" id="WWBI1">
+    <a href="#"></a>
+  </li>
+  <li class="section-index" id="WWBI2">
+    <a href="#scrollPage1"></a>
+  </li>
+  <li class="section-index" id="WWBI3">
+    <a href="#scrollPage2"></a>
+  </li>
+  <li class="section-index" id="WWBI4">
+    <a href="#scrollPage3"></a>
+  </li>
+  <li class="section-index" id="WWBI5">
+    <a href="#scrollPage4"></a>
+  </li>
+  <li class="section-index" id="WWBI6">
+    <a href="#scrollPage5"></a>
+  </li>
+  <li class="section-index" id="WWBI7">
+    <a href="#scrollPage6"></a>
+  </li>
+  <li class="section-index" id="WWBI8">
+    <a href="#scrollPage7"></a>
+  </li>
+  <li class="section-index" id="Footer"><a href="#scrollPage8"></a></li>
   <li class="back-to-top-button">
     <a href="#"
       ><img
@@ -91,4 +106,13 @@
   }
   pagination();
   $(document).on("scroll", pagination);
+  $(document).on("click", 'a[href^="#"]', function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: $($.attr(this, "href")).offset().top,
+      },
+      2000
+    );
+  });
 </script>

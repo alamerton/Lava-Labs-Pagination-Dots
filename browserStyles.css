@@ -8,6 +8,7 @@
   transform: translateY(-50%);
   right: 30px;
   list-style: none;
+  background-color: #006400;
 }
 
 #pagination .section-index {
@@ -90,4 +91,46 @@ body.scrollPage-6 #pagination li:nth-of-type(6),
 body.scrollPage-7 #pagination li:nth-of-type(7),
 body.scrollPage-8 #pagination li:nth-of-type(8) {
   transform: scale(2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scrollPage {
+  height: 100vh;
+  text-align: center;
+  margin: auto;
+}
+.scrollPage h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#scrollPage1 {
+  background: linear-gradient(to right, #3498db, #9b59b6);
+}
+#scrollPage2 {
+  background: linear-gradient(to right, #2ecc71, #1abc9c);
+}
+#scrollPage3 {
+  background: linear-gradient(to right, #e74c3c, #f39c12);
+}
+#scrollPage4 {
+  background: linear-gradient(to right, #ff6b6b, #ffd166);
+}
+#scrollPage5 {
+  background: linear-gradient(to right, #6a0572, #ab83a1);
+}
+#scrollPage6 {
+  background: linear-gradient(to right, #ff6b6b, #e74c3c);
+}
+#scrollPage7 {
+  background: linear-gradient(to right, #00bcd4, #03a9f4);
+}
+#scrollPage8 {
+  background: linear-gradient(to right, #ffd700, #cd7f32);
+}
+#scrollPage9 {
+  background: linear-gradient(to right, #006400, #00ff00);
 }
