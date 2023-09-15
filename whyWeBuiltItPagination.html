@@ -2,7 +2,7 @@
 <!-- https://github.com/alamerton/Lava-Labs-Pagination-Dots -->
 <ul id="pagination">
   <li class="section-index" id="WWBI1">
-    <a href="#"></a>
+    <a onclick="topFunction()"></a>
   </li>
   <li class="section-index" id="WWBI2">
     <a href="#scrollPage1"></a>
@@ -27,7 +27,7 @@
   </li>
   <li class="section-index" id="Footer"><a href="#scrollPage8"></a></li>
   <li class="back-to-top-button">
-    <a href="#"
+    <a onclick="topFunction()"
       ><img
         src="https://images.squarespace-cdn.com/content/64edc7446cbc661db861942b/738e116e-99db-49e7-b551-8b98673ef308/back_to_top_arrow.png?content-type=image%2Fpng"
       />
@@ -104,6 +104,12 @@
       // Likewise, these IF statements should reflect the number of sections on the page and correspond to the above list items
     });
   }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   pagination();
   $(document).on("scroll", pagination);
   $(document).on("click", 'a[href^="#"]', function (e) {
