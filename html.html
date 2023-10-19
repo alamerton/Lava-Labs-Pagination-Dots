@@ -1,214 +1,80 @@
 <!-- Pagination Code -->
 <!-- https://github.com/alamerton/Lava-Labs-Pagination-Dots -->
 <ul id="pagination">
-  <li class="section-index" id="WWBI1">
-      <a onclick="topFunction()"></a>
-  </li>
-  <li class="section-index" id="WWBI2">
-      <a href="#scrollPage1"></a>
-  </li>
-  <!-- <li class="section-index" id="WWBI3">
-      <a href="#scrollPage2"></a>
-  </li>
-  <li class="section-index" id="WWBI4">
-      <a href="#scrollPage3"></a>
-  </li> -->
-  <li class="section-index" id="WWBI5">
-      <a href="#scrollPage4"></a>
-  </li>
-  <!-- <li class="section-index" id="WWBI6">
-      <a href="#scrollPage5"></a>
-  </li> -->
-  <li class="section-index" id="WWBI7">
-      <a href="#scrollPage6"></a>
-  </li>
-  <!-- <li class="section-index" id="WWBI8">
-      <a href="#scrollPage7"></a>
-  </li>
-  <li class="section-index" id="WWBI9">
-      <a href="#scrollPage8"></a>
-  </li>
-  <li class="section-index" id="WWBI10">
-      <a href="#scrollPage9"></a>
-  </li>
-  <li class="section-index" id="WWBI11">
-      <a href="#scrollPage10"></a>
-  </li>
-  <li class="section-index" id="WWBI12">
-      <a href="#scrollPage11"></a>
-  </li>
-  <li class="section-index" id="WWBI13">
-      <a href="#scrollPage12"></a>
-  </li>
-  <li class="section-index" id="WWBI14">
-      <a href="#scrollPage13"></a>
-  </li>
-  <li class="section-index" id="WWBI15">
-      <a href="#scrollPage14"></a>
-  </li>
-  <li class="section-index" id="WWBI16">
-      <a href="#scrollPage15"></a>
-  </li>
-  <li class="section-index" id="WWBI17">
-      <a href="#scrollPage16"></a>
-  </li>
-  <li class="section-index" id="WWBI18">
-      <a href="#scrollPage17"></a>
-  </li>
-  <li class="section-index" id="Footer"><a href="#scrollPage18"></a></li>  -->
-  <li class="back-to-top-button">
-      <a onclick="topFunction()"><img
-              src="https://images.squarespace-cdn.com/content/64edc7446cbc661db861942b/738e116e-99db-49e7-b551-8b98673ef308/back_to_top_arrow.png?content-type=image%2Fpng" />
-      </a>
-  </li>
+    <li class="section-index" id="WWBI1">
+        <a onclick="topFunction()"></a>
+    </li>
+    <li class="section-index" id="WWBI2">
+        <a href="#scrollPage1"></a>
+    </li>
+    <li class="section-index" id="WWBI3">
+        <a href="#scrollPage2"></a>
+    </li>
+    <li class="section-index" id="WWBI4">
+        <a href="#scrollPage3"></a>
+    </li>
+    <li class="back-to-top-button">
+        <a onclick="topFunction()"><img
+                src="https://images.squarespace-cdn.com/content/64edc7446cbc661db861942b/738e116e-99db-49e7-b551-8b98673ef308/back_to_top_arrow.png?content-type=image%2Fpng" />
+        </a>
+    </li>
 </ul>
 <script>
-  function pagination() {
-      var offset = $(document).scrollTop();
-      var windowHeight = $(window).height();
-      var $body = $("body");
-      var padding = 0.75;
-      var pages = Object.keys($(".scrollPage"))
-          .filter((section) => Number(section) + 1)
-          .map((section) => Number(section) + 1);
-      pages.map((page) => {
-          if (offset > windowHeight * (page - 2 + padding)) {
-              $body.removeClass("scrollPage").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-1") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-1").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-2") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-2").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-3") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-3").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-4") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-4").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-5") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-5").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-6") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-6").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-7") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-7").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-8") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-8").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-9") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-9").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-10") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-10").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-11") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-11").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-12") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-12").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-13") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-13").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-14") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-14").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-15") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-15").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-16") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-16").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-17") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-17").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-18") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-18").addClass("scrollPage-" + page);
-          }
-          if (
-              $body.hasClass("scrollPage-19") &&
-              offset > windowHeight * (page - 2 + padding)
-          ) {
-              $body.removeClass("scrollPage-19").addClass("scrollPage-" + page);
-          }
-          // Likewise, these IF statements should reflect the number of sections on the page and correspond to the above list items
-      });
-  }
+    function pagination() {
+        var offset = $(document).scrollTop();
+        var windowHeight = $(window).height();
+        var $body = $("body");
+        var padding = 0.75;
+        var pages = Object.keys($(".scrollPage"))
+            .filter((section) => Number(section) + 1)
+            .map((section) => Number(section) + 1);
+        pages.map((page) => {
+            if (offset > windowHeight * (page - 2 + padding)) {
+                $body.removeClass("scrollPage").addClass("scrollPage-" + page);
+            }
+            if (
+                $body.hasClass("scrollPage-1") &&
+                offset > windowHeight * (page - 2 + padding)
+            ) {
+                $body.removeClass("scrollPage-1").addClass("scrollPage-" + page);
+            }
+            if (
+                $body.hasClass("scrollPage-2") &&
+                offset > windowHeight * (page - 2 + padding)
+            ) {
+                $body.removeClass("scrollPage-2").addClass("scrollPage-" + page);
+            }
+            if (
+                $body.hasClass("scrollPage-3") &&
+                offset > windowHeight * (page - 2 + padding)
+            ) {
+                $body.removeClass("scrollPage-3").addClass("scrollPage-" + page);
+            }
+            if (
+                $body.hasClass("scrollPage-4") &&
+                offset > windowHeight * (page - 2 + padding)
+            ) {
+                $body.removeClass("scrollPage-4").addClass("scrollPage-" + page);
+            }
+        });
+    }
 
-  function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-  }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
-  pagination();
-  $(document).on("scroll", pagination);
-  $(document).on("click", 'a[href^="#"]', function (e) {
-      e.preventDefault();
-      $("html, body").animate(
-          {
-              scrollTop: $($.attr(this, "href")).offset().top,
-          },
-          500 // This value was set to 2000 to create a slow scrolling effect
-      );
-  });
+    pagination();
+    $(document).on("scroll", pagination);
+    $(document).on("click", 'a[href^="#"]', function (e) {
+        e.preventDefault();
+        $("html, body").animate(
+            {
+                scrollTop: $($.attr(this, "href")).offset().top,
+            },
+            500 // This value was set to 2000 to create a slow scrolling effect
+        );
+    });
 </script>
 
 
